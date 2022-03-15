@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de contacto</title>
 </head>
 <body>
-    <form>
-        <label>nombre: <input type="text"></label>
-        <label >pais:
-            <select >
-                <option value="argentina">argentina</option>
-                <option value="brazil">brazil</option>
-            </select>
+    
+    <img src="imagenes\montaña_banner.jpg" alt="banner montaña - esto no debería verse 
+    a menos que sea ciego o se rompio la imagen">
+
+    <form action="contacto.html" method="get">
+        <label for="nombre">
+            Nombre : 
+            <input type="text" name="nombre" id="nombre">
         </label>
-        <label >
-            mensaje:
-            <textarea cols="30" rows="10"></textarea>
+        <label for="telefono">
+            telefono : 
+            <input type="tel" name="telefono" id="telefono">
         </label>
+        <label for="correo">
+            correo : 
+            <input type="email" name="correo" id="correo">
+        </label>
+        <label for="campo">
+            campo libre : 
+            <textarea name="campo" id="campo" cols="30" rows="10"></textarea>
+        </label>
+
+        <button type="submit">enviar</button>
     </form>
+    <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487.9088413497857!2d-58.623350822248696!3d-34.64848058988648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc75fd8de28e3%3A0x72c2d103e12da871!2sFOETRA%20Delegaci%C3%B3n%20Sub%20Oeste!5e0!3m2!1ses!2sar!4v1647302418772!5m2!1ses!2sar" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </body>
 </html>
