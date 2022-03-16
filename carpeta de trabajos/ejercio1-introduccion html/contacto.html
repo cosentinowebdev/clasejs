@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="estilos/gral.css">
+    <style>
+        img{
+            height: 150px;
+            width: 150px;
+        }
+    </style>
 </head>
 <body>
     
@@ -19,19 +26,19 @@
     <form action="contacto.html" method="get">
         <label for="nombre">
             Nombre : 
-            <input type="text" name="nombre" id="nombre">
+            <input type="text" name="nombre" id="nombre" class="camposFormularios campoEnRojo">
         </label>
         <label for="telefono">
             telefono : 
-            <input type="tel" name="telefono" id="telefono">
+            <input type="tel" name="telefono" id="telefono" class="camposFormularios">
         </label>
         <label for="correo">
             correo : 
-            <input type="email" name="correo" id="correo">
+            <input type="email" name="correo" id="correo" class="camposFormularios">
         </label>
         <label for="campo">
             campo libre : 
-            <textarea name="campo" id="campo" cols="30" rows="10"></textarea>
+            <textarea name="campo" id="campo" cols="30" rows="10" class="camposFormularios"></textarea>
         </label>
 
         <button type="submit">enviar</button>
