@@ -7,6 +7,7 @@
     <title>Formulario de contacto</title>
     <link rel="stylesheet" href="estilos/gral.css">
     <script src="./javascript/gral.js"></script>
+    <script src="./javascript/controlFormulario.js"></script>
     <style>
         img{
             height: 150px;
@@ -26,10 +27,10 @@
     </nav>
 
     <div class="container">
-        <form action="contacto.html" method="get">
+        <form action="contacto.html" method="get" name="contacto">
             <label for="nombre">
                 Nombre : 
-                <input type="text" name="nombre" id="nombre" class="camposFormularios campoEnRojo">
+                <input type="text" name="nombre" id="nombre" class="camposFormularios campoEnRojo" onblur="validateFormContacto()">
             </label>
             <label for="telefono">
                 telefono : 
@@ -44,11 +45,11 @@
                 <textarea name="campo" id="campo" cols="30" rows="10" class="camposFormularios"></textarea>
             </label>
     
-            <button type="submit" class="botonSubmit">enviar</button>
+            <button type="submit" class="botonSubmit" id="botonSubmit">enviar</button>
         </form>
     </div>
 
     <br>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487.9088413497857!2d-58.623350822248696!3d-34.64848058988648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc75fd8de28e3%3A0x72c2d103e12da871!2sFOETRA%20Delegaci%C3%B3n%20Sub%20Oeste!5e0!3m2!1ses!2sar!4v1647302418772!5m2!1ses!2sar" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487.9088413497857!2d-58.623350822248696!3d-34.64848058988648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc75fd8de28e3%3A0x72c2d103e12da871!2sFOETRA%20Delegaci%C3%B3n%20Sub%20Oeste!5e0!3m2!1ses!2sar!4v1647302418772!5m2!1ses!2sar" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
 </body>
 </html>

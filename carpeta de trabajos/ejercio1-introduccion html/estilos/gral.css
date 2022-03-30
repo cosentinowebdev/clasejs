@@ -30,6 +30,9 @@
     textarea{
         height: 50px;
     }
+    .error{
+        border-color: red;
+    }
 
     .botonSubmit {
         background-color: #04AA6D;
@@ -43,6 +46,10 @@
 
     .botonSubmit:hover {
         background-color: #45a049;
+    }
+
+    .botonSubmit:disabled{
+        background-color: #696969;
     }
 
     .container {
