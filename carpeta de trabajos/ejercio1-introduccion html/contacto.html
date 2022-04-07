@@ -40,9 +40,13 @@
                 correo : 
                 <input type="email" name="correo" id="correo" class="camposFormularios">
             </label>
+            <label for="cuit">
+                cuit empresa : 
+                <input type="number" name="cuit" id="cuit" class="camposFormularios">
+            </label>
             <label for="campo">
                 campo libre : 
-                <textarea name="campo" id="campo" cols="30" rows="10" class="camposFormularios"></textarea>
+                <textarea name="campo" id="campo" cols="30" rows="10" class="camposFormularios" onblur="validateFormContactoCampo()"></textarea>
             </label>
     
             <button type="submit" class="botonSubmit" id="botonSubmit">enviar</button>
