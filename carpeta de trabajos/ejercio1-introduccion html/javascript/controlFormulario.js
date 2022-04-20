@@ -25,14 +25,26 @@ console.log(nombre);
 console.log(telefono);
 console.log(correo);
 console.log(campo);
-console.log(cuit);
+// console.log(cuit);
 if (nombre != null && telefono != null && correo != null && campo != null && cuit == null) {
     alert("los campos han sido completados correctamente se ejecutara el codigo");
 }
 else {
     alert("los campos no han sido completados correctamente");
 }
-
+let arrayPaises=["argentina","chile","bolivia","paraguay"];
+var modelList = document.getElementById("pais");
+console.log(modelList);
+var i;
+// for (i = 0; i < arrayPaises.length; i++) {
+//   var pais = new Option(arrayPaises[i], i);
+//   modelList.options.add(pais);
+// }
+//(const [index, value] of [1, 2, 3, 4, 5].entries())
+for(let [index,valor] of arrayPaises.entries()){
+    var pais = new Option(valor, index);
+    modelList.options.add(pais);
+}
 function validateFormContacto() {
     let nombre = document.getElementById("nombre"); 
     console.log(nombre);
