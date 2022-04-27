@@ -74,3 +74,21 @@ for (let value of iterable) {
    value = "algo " + value;
   console.log(value);
 }
+
+let producto = {
+  id: 554,
+  nombre: "vinos",
+  precio: 4500,
+  descuento: 50,
+  envioGratis: true,
+  urlImagen: "gdasfkfgdhja",
+  cambiarPrecio: function(nuevoPrecio) {
+    this.precio=nuevoPrecio;
+  }
+}
+
+// if(producto["envioGratis"]){
+//   hace algo
+// }else{
+//   hago la logica para calcular el envio
+// }
