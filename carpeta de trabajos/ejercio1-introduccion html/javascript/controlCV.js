@@ -1,4 +1,8 @@
-console.log("funciona controlCV.js");
+miFecha= new Date()
+// console.log (miFecha.getFullYear())
+let spanFecha = document.getElementById("spanCard1");
+spanFecha.insertAdjacentHTML("afterbegin",miFecha.getFullYear());
+
 arrayMisEstudios =[
     "javascript en ",
     "python en ",
@@ -22,7 +26,7 @@ class ItemLista {
         //metodo me devolvera otro elemento el cual 
         //se incertara en el html
         if(this.url!=="" || this.url !==undefined ){
-            elementoNuevo = "<li>"+ this.estudio +" <a href='"
+            elementoNuevo = "<li>"+ this.estudio +" <a class='link-success' href='"
         + this.url +"'>"+this.nombreLink+"</a> </li>";
         }else{
             elementoNuevo = "<li>"+ this.estudio +"</li>";

@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+/* h1{
+    font-size: 15px !important;
+}
+//la forma mas segura para negar un estilo de bootstrap es !important
+*/
 /* a{
     color: red;
     font-size: 16px;
