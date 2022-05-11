@@ -21,6 +21,7 @@ var telefono = urlParams.get('telefono');
 var correo = urlParams.get('correo');
 var campo = urlParams.get('campo');
 var campo = urlParams.get('cuit');
+
 console.log(nombre);
 console.log(telefono);
 console.log(correo);
