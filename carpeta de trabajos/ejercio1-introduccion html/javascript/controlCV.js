@@ -1,8 +1,8 @@
 console.log("funciona controlCV.js");
 arrayMisEstudios =[
-    "javascript en cfp",
-    "python en cfp",
-    "angular en cfp",
+    "javascript en ",
+    "python en ",
+    "angular en ",
 ];
 // arrayObjetosMisEstudios=[
 //     {estudio: "javascript en",url: "https://cfl408moron.com.ar/", nombreLink:"cfl 408"},
@@ -17,8 +17,16 @@ class ItemLista {
     }
     //metodos
     elementoNuevo(){
-        let elementoNuevo = "<li>"+ this.estudio +" <a href='"
+        let elementoNuevo;
+        //en caso de que no le pasemos un link el 
+        //metodo me devolvera otro elemento el cual 
+        //se incertara en el html
+        if(this.url!=="" || this.url !==undefined ){
+            elementoNuevo = "<li>"+ this.estudio +" <a href='"
         + this.url +"'>"+this.nombreLink+"</a> </li>";
+        }else{
+            elementoNuevo = "<li>"+ this.estudio +"</li>";
+        }
         return elementoNuevo;
     }
 }
@@ -26,11 +34,18 @@ let itemLista= new ItemLista(arrayMisEstudios[0],
     "https://cfl408moron.com.ar/","cfl 408");
 let itemLista1= new ItemLista(arrayMisEstudios[1],
     "https://cfl408moron.com.ar/","cfl 408");
+let itemLista2= new ItemLista(arrayMisEstudios[2],
+        "","");
+        //en caso de que no le pasemos un link el 
+        //metodo me devolvera otro elemento el cual 
+        //se incertara en el html
 console.log(itemLista);
 
 arrayObjetosMisEstudios=[]
+//inserto en el array el objeto
 arrayObjetosMisEstudios.push(itemLista);
 arrayObjetosMisEstudios.push(itemLista1);
+arrayObjetosMisEstudios.push(itemLista2);
 console.log(arrayObjetosMisEstudios);
 let estudiosLista = document.getElementById("estudios");
 for(let valor of arrayObjetosMisEstudios){
