@@ -1,0 +1,8 @@
+{
+    "name":"rodrigo/backend",
+    "autoload": {
+        "psr-4":{
+            "base\\":"src/"
+        }
+    }
+}
